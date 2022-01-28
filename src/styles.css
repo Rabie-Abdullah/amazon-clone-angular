@@ -1,0 +1,20 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Pinyon+Script&family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap'); */
+
+body, html {
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Pinyon Script', cursive;
+    font-family: 'Poppins', sans-serif;
+    background-color: #EAEDED;
+}
+
+.card img {
+    width: 100%;
+    height: 230px;
+}
+* {
+    box-sizing: border-box;
+}
+.card {
+    display: flex;
+    min-height: auto;
+}

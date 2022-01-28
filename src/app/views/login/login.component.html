@@ -1,0 +1,52 @@
+<div class="forms mt-5 pt-4 mb-5">
+  <div class="container">
+    <form class="login  col-md-4 col-sm p-4 m-auto">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input
+          type="email"
+          class="form-control"
+          name="email"
+          ngModel
+          #email=ngModel
+          required
+          email
+        (focus)="changeData()"
+        />
+        <div class="error d-flex justify-content-center" *ngIf="email.touched && email.invalid">
+          <div *ngIf="email.errors?.['required']">*Email is required*</div>
+          <div *ngIf="email.errors?.['email']" 
+          >*Please enter valid email*</div>
+      </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          name="password"
+          ngModel
+          #password=ngModel
+          required
+          minlength="6"
+         (focus)="changeData()"
+
+        />
+        <div class="error d-flex justify-content-center" *ngIf="password.touched && password.invalid">
+          <div *ngIf="password.errors?.['required']">*Password is required*</div>
+          <div *ngIf="password.errors?.['minlength']" 
+          >*Password minlength is {{password.errors?.['minlength'].requiredLength}}*</div>
+  
+      </div>
+      </div>
+        <div class=" error d-flex justify-content-center" *ngIf='invalidLogin'>*Invalid Email or Password...Please try again*</div>
+
+      <button type="submit" class="btn btn-primary form-control">Submit</button>
+    </form>
+    <div class="signup col-md-4 col-sm mt-4 m-auto">
+      <button type="submit" class="btn btn-secondary form-control" routerLink="/signup">Signup</button>
+
+    </div>
+  </div>
+</div>

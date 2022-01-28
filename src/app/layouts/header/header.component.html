@@ -1,0 +1,90 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/"
+      >Egy<span class="blue text-primary">S</span>tore</a
+    >
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarToggler"
+      aria-controls="navbarTogglerDemo02"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarToggler">
+      <form class="d-flex m-auto">
+        <input
+          class="form-control me-1 col-lg-8"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+          name="search"
+          [(ngModel)]="searchTerm"
+          (change)="search()"
+        />
+        <button class="btn btn-primary" type="submit" (click)="search()">
+          <i class="fa fa-search"></i>
+        </button>
+      </form>
+      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            id="navbarDarkDropdownMenu"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Hello, sign in
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-light"
+            aria-labelledby="navbarDarkDropdownMenu"
+          >
+            <li>
+              <div class="dropdown-item d-grid gap-2 col-6 mx-auto">
+                <button
+                  class="btn btn-primary"
+                  type="button"
+                  routerLink="/login"
+                >
+                  Log In
+                </button>
+              </div>
+            </li>
+            <li>
+              <a class="dropdown-item">
+                Don't have an account?
+                <div class="m-auto text-center mt-1">
+                  <a routerLink="/signup">Sign Up</a>
+                </div>
+              </a>
+            </li>
+            <li><a class="dropdown-item" routerLink="/login">My orders</a></li>
+            <li><a class="dropdown-item" routerLink="/">Recomendations</a></li>
+            <li><a class="dropdown-item" routerLink="/">Lists</a></li>
+            <li>
+              <a class="dropdown-item" routerLink="/">Content & Devices</a>
+            </li>
+            <li>
+              <a class="dropdown-item" routerLink="/"
+                >Membership & Subscription</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/login">Orders</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/cart">
+            <i class="fa fa-shopping-cart"></i> <small class="text-white"> {{cartItems}} </small></a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,163 @@
+<app-carousel></app-carousel>
+
+
+<section id="features">
+    <div class="container">
+      <div class="row " >
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 " *ngFor="let feature of features">
+          <div class="card h-700">
+            <h5 class="card-title">{{feature.title}}</h5>
+            <a routerLink="/category/{{feature.category}}">
+              <img src="{{feature.imageUrl}}"  class="card-img">
+            </a>
+            <div class="card-body">
+              <a routerLink="/category/{{feature.category}}">{{feature.linkData}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!--================================Top beauty products=====================================================-->
+ <section id="top">
+    <div class="container">
+      <div class="row ">
+        <h5 id="heading">Top beauty products <a routerLink="/topbeauty">Shop now</a> </h5> 
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" *ngFor="let beauty of beauties">
+         <a routerLink="/topbeauty">
+          <img src="{{beauty.imageUrl}}" class="img-fluid" routerLink="/topbeauty" alt="">
+         </a>
+        </div>
+      </div>
+    </div>
+</section>
+<!--=======================Top phone products====================================-->
+<section id="top-2">
+    <div class="container">
+      <div class="row mt-4">
+        <h5 id="heading">Top phone products <a routerLink="/topphones">Shop now</a > </h5> 
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2"  *ngFor="let phone of topPhones">
+          <a routerLink="/topphones">
+            <img src="{{phone.imageUrl}}" class="img-fluid" alt="" routerLink="/topphones">
+          </a>
+        </div>
+      </div>
+    </div>
+</section>
+
+ <!--====================features-2=======================-->
+ <section id="features-2">
+    <div class="container">
+      <div class="row ">
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 " *ngFor="let feature of features2">
+          <div class="card h-700">
+            <h5 class="card-title">{{feature.title}}</h5>
+            <a routerLink="/category/{{feature.category}}">
+              <img src="{{feature.imageUrl}}" class="card-img" routerLink="/category/{{feature.category}}">
+            </a>
+            <div class="card-body">
+              <a routerLink="/category/{{feature.category}}">{{feature.linkData}}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--================================Gifts in Video Game=====================================================-->
+  <section id="top-3">
+    <div class="container">
+      <div class="row">
+        <h5 id="heading">Gifts in Video Game <a routerLink="/videogames">Shop now</a> </h5> 
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" *ngFor="let gift of topGifts">
+          <a routerLink="/videogames">
+            <img src="{{gift.imageUrl}}" class="img-fluid" alt="" >
+          </a>
+        </div>
+      </div>
+    </div>
+</section>
+
+          <!--=======================Best Sellers in Baby====================================-->
+          <section id="top-4">
+            <div class="container">
+              <div class="row mt-4">
+                <h5 id="heading">Best Sellers Baby Products <a routerLink="/topbaby">Shop now</a> </h5> 
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" *ngFor="let baby of topBaby">
+                <a routerLink="/topbaby">
+                  <img src="{{baby.imageUrl}}" class="img-fluid" alt="" >
+                </a>
+                </div>
+              </div>
+            </div>
+        </section>
+
+           <!--================================Top beauty products=====================================================-->
+           <section id="top-5">
+            <div class="container">
+              <div class="row mt-4">
+                <h5 id="heading">Top beauty products <a routerLink="/topbeauty">Shop now</a> </h5> 
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" *ngFor="let beauty of topBeauty">
+                  <a routerLink="/topbeauty">
+                    <img src="{{beauty.imageUrl}}" class="img-fluid" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+        </section>
+
+
+
+   <!--=================Sign in section==================-->
+   <section id="signIn">
+    <div class="container mt-4 pt-4">
+      <div class="row">
+        <div class="col">
+          <h5 class="text-center mt-2 p-t-2">See personalized recommendations</h5>
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-primary" type="button" routerLink="/login">Sign in</button>
+            <p  class="text-center mt-2 p-t-2">New customer? <a routerLink="/signup">Start here.</a> </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!--===================final section=============================-->
+<section id="final">
+  <div class="container-fluid bg-dark">
+    <div class="container  mt-4 pt-4">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <h5>Get to Know Us</h5>
+          <a href="#" class="link d-block">Careers</a>
+          <a href="#" class="link d-block">Blog</a>
+          <a href="#" class="link d-block">About E-Spring</a>
+          <a href="#" class="link d-block">Investor Relations</a>
+          <a href="#" class="link d-block">E-Spring Devices</a>
+          <a href="#" class="link d-block">E-Spring Tours</a>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <h5>Make Money with Us</h5>
+          <a href="#" class="link d-block">Sell products on E-Spring</a>
+          <a href="#" class="link d-block">Sell apps on E-Spring</a>
+          <a href="#" class="link d-block">Become an Affiliate</a>
+          <a href="#" class="link d-block">Advertise Your Products</a>
+          <a href="#" class="link d-block">Self-Publish with Us</a>
+          <a href="#" class="link d-block">Host an E-Spring Hub</a>
+          <a href="#" class="link d-block">See More Make Money with Us</a>
+
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <h5>E-commerce Payment Products</h5>
+          <a href="#" class="link d-block">E-commerce Business Card</a>
+          <a href="#" class="link d-block">Shop with Points</a>
+          <a href="#" class="link d-block">Reload Your Balance</a>
+          <a href="#" class="link d-block">E-commerce Currency Converter</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</section>

@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="text-center mt-4 mb-4">
+      <h2 class="">International Best Sellers</h2>
+      <p>
+        Top products shipped internationally including electronics, baby, books,
+        and more
+      </p>
+    </div>
+    <div class="row row-cols-1 row-cols-lg-4 row-cols-md-3 g-4 mt-5 mb-5">
+      <div class="col" *ngFor="let product of beauties">
+        <div class="card">
+          <a routerLink="/product/{{product.id}}">
+            <img  src="{{ product.imageUrl }}" class="card-img-top" alt="..." />
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">{{ product.title }}</h5>
+            <star-rating
+              [value]="4"
+              [totalstars]="5"
+              checkedcolor="red"
+              uncheckedcolor="black"
+              size="24px"
+              [readonly]="false"
+            ></star-rating>
+            <p class="card-text">{{ product.price | currency }} </p>
+            <p class="card-text">Count: {{ product.rating.count }} </p>
+            <a routerLink="/product/{{product.id}}">more details</a>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

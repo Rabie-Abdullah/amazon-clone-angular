@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+.navbar {
+    font-family: 'Mochiy Pop P One', sans-serif !important;
+}
+.fa-shopping-cart {
+    color: #fff;
+    font-size:30px ;
+}

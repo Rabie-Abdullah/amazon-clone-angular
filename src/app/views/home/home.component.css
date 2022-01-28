@@ -1,0 +1,115 @@
+
+.navbar .nav-link {
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-left: 20px !important;
+    font-family: 'Gorditas', cursive;
+    color: #fff!important;
+}
+.navbar .navbar-brand .blue {
+    color: blue;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.h-700, img {
+    width: 100%;
+    height: 100%;
+}
+#features-2 {
+    margin-bottom: 50px;
+}
+
+.card {
+    margin-top: 20px;
+}
+
+
+#final h5 {
+    color: #fff;
+}
+#final .link {
+    text-decoration: none;
+    color: #fff;
+    margin-top: 15px;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/*================Features=====================*/
+#features .row,
+#features-2 .row{
+    margin-top: 40px;
+}
+#features .row a,
+#features-2 .row a {
+    text-decoration: none;
+}
+#features .row .card a:hover,
+#features-2 .row .card a:hover {
+    color: red;
+}
+#features .row .card {
+    padding: 16px;
+    top: -50%;
+}
+
+@media (max-width: 776px) {
+    #features .row .card {
+        top: 0px !important;
+    }
+ }
+
+/*Discover my E-commerce website Slider*/
+
+
+
+/*=============Top beauty Section============*/
+#top .container,
+#top-2 .container,
+#top-3 .container,
+#top-5 .container,
+#top-6 .container{
+    background-color: #fff;
+    padding-bottom: 14px;
+}
+#top-4 .container {
+    background-color: #fff;
+    padding-bottom: 14px;
+}
+#top .container img,
+#top-2 .container img,
+#top-3 .container img,
+#top-5 .container img,
+#top-6 .container img{
+    width: 100%;
+    height: 100%;
+}
+#top #heading,
+#top-2 #heading,
+#top-3 #heading,
+#top-4 #heading,
+#top-5 #heading,
+#top-6 #heading{
+    text-transform: capitalize;
+    padding: 10px;
+}
+#top #heading a,
+#top-2 #heading a,
+#top-3 #heading a,
+#top-4 #heading a,
+#top-5 #heading a,
+#top-6 #heading a {
+    text-decoration: none;
+    font-size: 16px;
+}
+#top #heading a:hover,
+#top-2 #heading a:hover,
+#top-3 #heading a:hover,
+#top-4 #heading a:hover,
+#top-5 #heading a:hover,
+#top-6 #heading a:hover,
+#final .link:hover{
+    color: red;
+}
+
